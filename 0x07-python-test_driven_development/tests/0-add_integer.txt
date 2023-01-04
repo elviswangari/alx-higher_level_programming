@@ -106,7 +106,7 @@ Case NaN 1:
     >>> add_integer(0, float('nan'))
     Traceback (most recent call last):
     	      ...
-    TypeError: b must be an integer
+    ValueError: cannot convert float NaN to integer
 
 Case NaN 2:
 
