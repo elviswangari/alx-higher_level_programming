@@ -1,3 +1,3 @@
 #!/bin/env bash
-# a script to check the number of bytes in responce of the body
+# a script to check the number of bytes in response of the body
 curl -s "$1" | wc -c
