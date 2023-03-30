@@ -1,3 +1,3 @@
 #!/bin/bash
-# a script to check the number of bytes in response of the body
+# send a request to an URL with curl, and displays the size of the body of the response
 curl -s "$1" | wc -c
