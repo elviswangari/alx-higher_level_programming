@@ -5,4 +5,5 @@ const file = process.argv[2];
 const filedata = process.argv[3];
 const fs = require('fs');
 
-const data = fs.writeFileSync(file, filedata, 'UTF8');
+const data = Buffer.alloc(filedata.length, filedata, 'UTF8');
+fs.writeFileSync(file, data);
